@@ -8,8 +8,18 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        const getMessage = () => "Hello World";
-        document.getElementById('output').innerHTML = getMessage();
+       
+        const SERIE = 'Friends'
+
+        function x() {                      //segue o mesmo critério do let (o const e o let preservam a variável dentro do escopo que foi criado)
+            const SERIE = 'B99'
+            console.log(SERIE)
+        }
+
+        x()
+
+        console.log(SERIE)
+       
     </script>
 
 </head>

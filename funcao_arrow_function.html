@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+                //função anõnima
+            /*let quadrado = function(x = 5) {
+                return x * x
+            }*/
+                
+            //sempre que for ciar a Arrow function colocar o =>
+            /*let quadrado = (x) => {
+                return x * x
+            }*/
+
+            /*let quadrado = (x) => x * x     // return implicito ; Não é necessário colocar parênteses, chaves e nem o return quando só tem 1 parâmetro
+
+            document.write( quadrado(3) )*/
+
+            
+            
+            /*let parOuImpar = function(numero) {
+                if(numero % 2 === 0) {
+                    return 'par'
+                } else {
+                    return 'ímpar'
+                }
+            }*/
+
+            /*let parOuImpar = (numero) => {
+                if(numero % 2 === 0) {
+                    return 'par'
+                } else {
+                    return 'ímpar'
+                }
+            }*/
+
+            let parOuImpar = (numero) => numero % 2 === 0 ? 'par' : 'ímpar' //return implicito
+
+            document.write(parOuImpar(3))
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

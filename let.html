@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+       
+        //3 escopos: global, função e bloco
+        
+        let serie = 'Friends'
+
+        {
+            let serie = 'The Walking Dead'
+            console.log('dentro do bloco ' + serie)
+        }
+
+            console.log('fora do bloco ' + serie)
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
