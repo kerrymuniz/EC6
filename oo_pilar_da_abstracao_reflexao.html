@@ -13,7 +13,7 @@
         //cadeira e sofá
 
         //paradigma procedural
-        
+        /*
         //cadeira
         let qtde_pernas = 4
         let giratoria = false
@@ -56,6 +56,63 @@
         console.log(cadeiras)
 
         //girar_cadeira(1)
+        */
+
+
+        //paradigma de OO
+        /*class Cadeira {
+            constructor(qtde_pernas, giratoria, cor) {
+                this.qtde_pernas = qtde_pernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira() {
+                if(this.giratoria === true) {
+                    console.log('girou')
+                } else {
+                    console.log('cadeira não é giratória')
+                }
+            }
+        }
+
+        let cadeiras = Array()
+
+        cadeiras.push(new Cadeira(4, false, 'azul'))
+        cadeiras.push(new Cadeira(1, true, 'verde'))
+
+        console.log(cadeiras)*/
+
+        /*let cadeira = new Cadeira(4, false, 'azul')
+        let cadeira2 = new Cadeira(1, true, 'vermelha')*/
+
+        //console.log(cadeira)
+        //cadeira2.girarCadeira()
+
+
+        //Praticar paradigma OO
+        class Sofa {
+            constructor(qtde_lugares, reclinavel, cor) {
+                this.qtde_lugares = qtde_lugares
+                this.reclinavel = reclinavel
+                this.cor = cor
+            }
+
+            reclinarSofa() {
+                if(this.reclinavel === true){
+                    console.log('reclinável')
+                } else {
+                    console.log('Não é reclinável')
+                }
+            }
+        }
+
+        let sofa = Array()
+
+        sofa.push(new Sofa(2, false, 'marrom'))
+        sofa.push(new Sofa(4, true, 'beje'))
+
+        console.log(sofa)
        
     </script>
 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        /*class Animal {      //classe Pai (não precisa do super() antes do this)
+           constructor() {
+            this.cor = ''   //atributo de herança
+            this.tamanho = null   //atributo de herança
+            this.peso = null
+           }
+
+           dormir() {
+            console.log('Dormir')
+           }
+        }
+
+        class Cachorro extends Animal {     //'extends class Pai' serve para que os filhos herdem a class da 'class Pai'
+            constructor() {
+                //this.cor = 'Branco e marrom'  Atributo herdado
+                //this.tamanho = 30     Atributo herdado
+                super()
+                this.orelhas = 'Grandes e caídas'
+            }
+
+            correr() {
+                console.log('Correr')
+            }
+
+            rosnar() {
+                console.log('Rosnar')
+            }
+        }
+
+        class Passaro extends Animal {
+            constructor() {
+                super()
+                this.bico = 'Curto'
+            }
+
+            voar() {
+                console.log('Voar')
+            }
+        }
+
+        class Papagaio extends Passaro {    //cascata = quando a class Papagaio recebe os atributos e metodos da class Passaro e consequentemente Animal,
+                                                // pois a class Passaro está recebendo a class Animal, fazendo com que aconteça uma cascata
+            constructor() {
+                super()
+                this.sabeFalar = true
+            }
+
+            falar() {
+                console.log('Falar')
+            }
+        }
+
+        let cachorro = new Cachorro()
+        let passaro = new Passaro()
+        let papagaio = new Papagaio()
+
+        /*
+        cachorro.dormir()
+        passaro.dormir()
+        papagaio.falar()
+        papagaio.dormir()
+        papagaio.voar()
+        
+
+        console.log(cachorro)
+        console.log(passaro)
+        console.log(papagaio)*/
+
+
+        //Praticar herança
+        class Animal {
+            constructor() {
+                this.cor = 'verde'
+                this.tamanho = 15
+                this.peso = 250
+            }
+
+            dormir() {
+                console.log('Dormir')
+            }
+        }
+
+        class Coruja extends Animal {
+            constructor() {
+                super()
+                this.garras = 6
+            }
+
+            voar() {
+                console.log('Voar')
+            }
+        }
+
+        class micoLeao extends Coruja {
+            constructor() {
+                super()
+                this.tamanhoJuba = 'pequena'
+                this.tamanhoPata = 5
+            }
+
+            saltar() {
+                console.log('Saltar')
+            }
+        }
+
+        let coruja = new Coruja()
+        let micoleao = new micoLeao()
+        
+        /*coruja.dormir()
+        micoleao.saltar()*/
+        
+        console.log(coruja)
+        console.log(micoleao)
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

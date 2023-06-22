@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+       /*class Tv {
+        constructor() {
+            this._relacaoCanais = Array(2, 4, 5, 7, 10)
+            this._canalAtivo = 5
+            this._volume = 5
+        }
+
+        //getters e setters
+        get canalAtivo() {
+            return this._canalAtivo
+        }
+
+        set canalAtivo(canal) {
+            //verificar se o canal existe - encontrar sua posição
+            /*let x = this._relacaoCanais.indexOf(canal)
+            console.log(x)/
+
+            //camada de segurança
+            if(this._relacaoCanais.indexOf(canal) !== -1) {
+                this._canalAtivo = canal
+            }
+        }
+       }
+
+       let tv = new Tv()
+
+       tv.canalAtivo = 7
+       console.log(tv.canalAtivo)
+       */
+
+
+       //Praticar
+       class Tv {
+        constructor() {
+            this._relacaoCanal = Array(1, 2, 3, 4, 5, 8)
+            this._canalAtivo = 3
+            this._volume = 4
+        }
+
+        //getter
+        get canalAtivo() {
+            return this._canalAtivo
+        }
+
+        //setter
+        set canalAtivo(canal) {
+            /*let c = this._relacaoCanal.indexOf(canal)
+            console.log(c)*/
+
+            if(this._relacaoCanal.indexOf(canal) !== -1) {
+                this._canalAtivo = canal
+            }
+        }
+       }
+
+       let tv = new Tv()
+       tv.canalAtivo = 1
+       console.log(tv.canalAtivo)
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
