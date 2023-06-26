@@ -10,7 +10,7 @@
     <script type="text/babel">
        
        //modelo da entidade/objeto
-       class ContaBancaria {
+       /*class ContaBancaria {
         //agencia
         //numeroConta
         //saldo
@@ -42,7 +42,47 @@
        x.depositar(420)
        console.log(x.consultarSaldo())
        x.sacar(300)
-       console.log(x.consultarSaldo())
+       console.log(x.consultarSaldo())*/
+
+       class ContaBancaria {
+        constructor() {
+            this.senha = 383784738471384713841
+            this.conta = 34567
+            this.banco = 'bradesco'
+            this.saldo = 700
+            this.limite = 1000
+        }
+
+        depositar(valorDeposito) {
+            this.saldo += valorDeposito
+        }
+
+        sacar(valorSaque) {
+            this.saldo -= valorSaque
+        }
+
+        consultarSaldo() {
+            return this.saldo
+        }
+
+        consultarBanco() {
+            return this.banco
+        }
+
+        consultarLimite() {
+            return this.limite
+        }
+
+       }
+
+       let x = new ContaBancaria()
+
+       console.log('Saldo = ' + x.consultarSaldo())
+       x.depositar(20)
+       console.log('Valor após o depósito = ' + x.consultarSaldo())
+       x.sacar(300)
+       console.log('Valor após o saque = ' + x.consultarSaldo())
+       console.log('Limite da conta = ' + x.consultarLimite())
 
 
        

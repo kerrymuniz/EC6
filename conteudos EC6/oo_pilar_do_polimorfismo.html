@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+            
+        /*class Animal {      
+           constructor(cor, tamanho, peso) {
+            this.cor = cor   
+            this.tamanho = tamanho   
+            this.peso = peso
+           }
+
+           dormir() {
+            console.log('Dormir')
+           }
+        }
+
+        class Passaro extends Animal {
+            constructor(bico, cor, tamanho, peso) {
+                super(cor, tamanho, peso)
+                this.bico = bico
+            }
+
+            voar() {
+                console.log('Voar')
+            }
+        }
+
+        class Papagaio extends Passaro {
+            constructor(sabeFalar, cor, tamanho, peso) {
+                super('Médio', cor, tamanho, peso)
+                this.sabeFalar = sabeFalar
+            }
+
+            falar() {
+                console.log('Falar')
+            }
+        }
+
+        class Avestruz extends Passaro {
+            constructor() {
+                super('Grande', 'Brano e preto', 250, 15000)
+            }
+
+            enterrarCabeca() {
+                console.log('Enterrar a cabeça')
+            }
+
+            voar() {
+                console.log('Não sabe voar')
+            }
+        }
+
+        let papagaio = new Papagaio(true, 'Verde', 25, 350)
+        console.log(papagaio)
+
+        papagaio.voar()
+
+        let avestruz = new Avestruz()
+        avestruz.enterrarCabeca()
+        avestruz.voar()*/
+
+        class Animal {
+            constructor(tamanho, patas, garras) {
+                this.tamanho = tamanho
+                this.patas = patas
+                this.garras = garras
+            }
+
+            rugir() {
+                console.log('Rugir')
+            }
+        }
+
+        class Leao extends Animal {
+            constructor(velocidade) {
+                super(190, 'Grandes', 'Médias')
+                this.velocidade = velocidade
+            }
+
+            pulo() {
+                console.log('Pulo alto')
+            }
+        }
+
+        class Tigre extends Leao {
+            constructor(presas) {
+                super(120 + 'km/h')
+                this.presas = presas
+            }
+
+            rugir() {
+                console.log('Rugido vibrante')
+            }
+        }
+
+        let leao = new Leao(125 + 'km/h')
+        let tigre = new Tigre('Grandes e afiadas')
+
+        console.log(leao)
+        console.log(tigre)
+        leao.rugir()
+        tigre.rugir()
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
