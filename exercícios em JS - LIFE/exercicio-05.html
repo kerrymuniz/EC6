@@ -8,17 +8,18 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
+        var x = prompt('Digite um número:')
 
-        function soma(n1, n2) {
-            var operacao = n1 + n2
-            return operacao
-        }
+          function ehPar(x) {
+            if(x % 2 === 0) {
+                console.log('Verdadeiro')
+            } else {
+                console.log('False')
+            }
+          }
+          
+          ehPar(x)
 
-        var n1 = Number.parseFloat(prompt('Digite o primeiro número: '))
-        var n2 = Number.parseFloat(prompt('Digite o segundo número: '))
-
-        console.log(soma(n1, n2))
-       
     </script>
 
 </head>

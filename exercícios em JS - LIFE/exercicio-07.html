@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+       
+        function inverterString(string) {
+                /*// 1º transformar string em array
+
+                let strArr = string.split('')
+
+                // 2º inverter ordem dos elementos
+
+                let arrayInvert = strArr.reverse()
+
+                // 3º voltar de array para string
+
+                let invertedString = arrayInvert.join('')*/
+                
+
+                // Em uma Única linha
+                let stringReverse = string.split('').reverse().join('')
+
+                console.log(stringReverse)
+        }
+
+        inverterString('Kerry')
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
