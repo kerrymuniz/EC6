@@ -10,17 +10,21 @@
     <script type="text/babel">
 
         let pessoa = {
-            nome: 'José',
-            idade: 45
+            nome: 'Maria',
+            idade: 25
         }
 
-        console.log(pessoa.nome)
+        console.log(pessoa)
 
-        pessoa.nome = 'Kerry'       //processo de modificação dos valores
-        pessoa.idade = 30
+        //===========================
 
-        console.log(pessoa.nome)
-        console.log(pessoa.idade)
+        pessoa.sexo = 'Feminino'        //inclusão de atributos do objeto literal 'pessoa'
+
+        console.log(pessoa)
+
+        pessoa.dizerOi = () => console.log('Olá tudo bem?')
+
+        pessoa.dizerOi()
 
     </script>
 
