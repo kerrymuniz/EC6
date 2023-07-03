@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        function inverterObjeto(objeto) {
+        const objetoInvertido = {};
+
+        for (const chave in objeto) {
+            const valor = objeto[chave];
+            objetoInvertido[valor] = chave;
+        }
+
+        return objetoInvertido;
+        }
+
+        const objeto = {
+            chave1: 'valor1',
+            chave2: 'valor2',
+            chave3: 'valor3'
+        };
+
+        const objetoInvertido = inverterObjeto(objeto);
+        console.log(objetoInvertido);
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

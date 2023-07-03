@@ -8,20 +8,16 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        let num = Number.parseFloat(prompt('Digite um número:'))
-        let soma = 1
 
-        function fatorial(num) {
-            while(num > 0) {
-                soma = soma * num
-                console.log(num)
-                num--
-            }
+        var idadeHumanos = prompt('Digite uma idade Humana:')
 
-            return soma
+        function calcularIdadeCachorro() {
+           let idadeCachorro = idadeHumanos * 7
+
+           return idadeCachorro
         }
 
-        console.log(fatorial(num))
+        console.log(`O cachorro terá ${calcularIdadeCachorro()} anos`)
 
     </script>
 

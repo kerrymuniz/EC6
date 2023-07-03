@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        function gerarFibonacci(numero) {
+        const fibonacci = [0, 1]; // Inicializando com os primeiros dois números da sequência
+
+        while (fibonacci[fibonacci.length - 1] <= numero) {
+            const proximo = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2]; // Calcula o próximo número da sequência
+            if (proximo <= numero) {
+            fibonacci.push(proximo);
+            } else {
+            break;
+            }
+        }
+
+            return fibonacci;
+        }
+
+        const numero = 70;
+        const sequencia = gerarFibonacci(numero);
+        console.log(sequencia);
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

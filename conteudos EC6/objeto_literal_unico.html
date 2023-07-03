@@ -9,22 +9,26 @@
 
     <script type="text/babel">
 
-        let pessoa = {
-            nome: 'Maria',
-            idade: 25
+       let assinatura = {
+        idCliente: 1000,
+        descricao: 'Acesso a internet',
+        status() {
+            console.log('Ativo')
         }
+       }
 
-        console.log(pessoa)
+       console.log(assinatura.descricao)
 
-        //===========================
+       let y = assinatura
 
-        pessoa.sexo = 'Feminino'        //inclusão de atributos do objeto literal 'pessoa'
+       console.log(y.descricao)
 
-        console.log(pessoa)
+       //================================
 
-        pessoa.dizerOi = () => console.log('Olá tudo bem?')
+       y.descricao = 'Internet + tv + telefone'
 
-        pessoa.dizerOi()
+       console.log(assinatura.descricao)
+       console.log(y.descricao)
 
     </script>
 

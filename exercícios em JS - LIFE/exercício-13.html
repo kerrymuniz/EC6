@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let x = Number.parseFloat(prompt('Digite um número'))
+        let y = Number.parseFloat(prompt('Digite outro número'))
+
+        function calcularPotencia(x, y) {
+            let potencia = x ** y
+            return potencia
+        }
+
+        document.write(`O resultado da potência de ${x} e ${y} é igual a ${calcularPotencia(x, y)}`)
+        console.log(`O resultado da potência de ${x} e ${y} é igual a ${calcularPotencia(x, y)}`)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

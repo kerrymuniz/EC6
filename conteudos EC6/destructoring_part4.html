@@ -8,20 +8,23 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        let num = Number.parseFloat(prompt('Digite um número:'))
-        let soma = 1
 
-        function fatorial(num) {
-            while(num > 0) {
-                soma = soma * num
-                console.log(num)
-                num--
-            }
+        //array
+        /*let arr = [10, 20, 30, 40]
 
-            return soma
+        let [a, ...resto] = arr
+
+        console.log(a)
+        console.log(resto)*/
+
+        //objeto
+        let obj = {
+            a:10, b:20, c:30, d:40
         }
 
-        console.log(fatorial(num))
+        let {a, ...z} = obj
+        console.log(a)
+        console.log(z)
 
     </script>
 

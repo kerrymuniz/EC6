@@ -9,17 +9,23 @@
 
     <script type="text/babel">
 
-        function maiorPalavra(str) {
-            var maiorpalavra = Array()
-            maiorpalavra[0] = 'banana'
-            maiorpalavra[1] = 'carro'
-            maiorpalavra[2] = 'espanador'
-            maiorpalavra[3] = 'paralelepípedo'
+        function buscarMaiorPalavra(string) {
+            const palavras = string.split(' ');
+            let maiorPalavra = '';
 
-            return maiorpalavra
+            for(let i = 0; i < palavras.length; i++) {
+                const palavra = palavras[i]
+                if(palavra.length > maiorPalavra.length) {
+                    maiorPalavra = palavra;
+                }
+            }
+
+            return maiorPalavra;
         }
 
-        console.log(maiorpalavra[3]['paralelepípedo'])
+        const string = 'Eu gosto muito de jogar futebol';
+        const maiorPalavra = buscarMaiorPalavra(string);
+        console.log(`A maior palavra da string é ${maiorPalavra}`);
 
     </script>
 

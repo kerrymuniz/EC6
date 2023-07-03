@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+      function encontrarPrimos(num) {
+            const primos = [];
+
+            for(let i = 2; i <= num; i++) {
+                if(isPrimo(i)) {
+                primos.push(i);
+                }
+            }
+
+            return primos
+        }
+
+        function isPrimo(num) {
+            if(num < 2) {
+                return false
+            }
+
+            for(let i = 2; i <= Math.sqrt(num); i++) {
+                if(num % i === 0) {
+                    return false
+                }
+            }
+
+            return true
+        }
+
+        const num = 20;
+        const primos = encontrarPrimos(num);
+        console.log(primos);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
